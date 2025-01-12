@@ -1,0 +1,252 @@
+/* Global Styles */
+.caretaking-container {
+    font-family: 'Arial', sans-serif;
+    padding: 3rem;
+    background: linear-gradient(to bottom, #7ba2db, #E1E4E8); /* Light to darker gray gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading Styles */
+.cheading {
+    text-align: center;
+    font-size: 3rem;
+    color: #333333; /* Dark gray text */
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* Search and Sort Styles */
+.csearch-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 2rem;
+}
+
+.csearch-bar {
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.csearch-bar:focus {
+    outline: none;
+    border-color: #4A90E2; /* Primary Blue */
+}
+
+.csort-select {
+    padding: 1rem;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.csort-select:focus {
+    outline: none;
+    border-color: #4A90E2; /* Primary Blue */
+}
+
+/* Card Grid Layout */
+.cservices-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+}
+
+/* Service Card Styles */
+.cservice-card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Subtle gradient effect */
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.cservice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cservice-name {
+    font-size: 1.8rem;
+    color: #333333; /* Dark gray text */
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.cservice-card:hover .cservice-name {
+    color: #9B4D96; /* Secondary Purple for hover effect */
+}
+
+.cservice-details {
+    font-size: 1.1rem;
+    color: #777777; /* Light gray text for secondary details */
+    margin-bottom: 0.7rem;
+}
+
+.cprice {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4A90E2; /* Primary Blue */
+    margin-top: 1rem;
+}
+
+/* Pagination Styles */
+.cpagination {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.cpage-button {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    background-color: #4A90E2; /* Primary Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cpage-button:hover {
+    background-color: #357ABD; /* Slightly darker blue for hover */
+}
+
+.cpage-button.active {
+    background-color: #9B4D96; /* Secondary Purple for active page */
+}
+
+/* Modal Styles */
+.cmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.cmodal-content {
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 12px;
+    width: 450px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.cclose {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #4A90E2; /* Primary Blue for close button */
+}
+
+.cclose:hover {
+    color: #F44336; /* Red on hover */
+}
+
+.cbooking-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cbooking-form input {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.cbooking-form input:focus {
+    outline: none;
+    border-color: #4A90E2; /* Primary Blue */
+}
+
+.cbooking-form button {
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    background-color: #4A90E2; /* Primary Blue */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cbooking-form button:hover {
+    background-color: #357ABD; /* Slightly darker blue for hover */
+}
+
+.cmessage {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #9B4D96; /* Secondary Purple for confirmation message */
+    margin-top: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .csearch-sort-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .csearch-bar {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .cservices-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cservice-card {
+        padding: 1.5rem;
+    }
+
+    .cmodal-content {
+        width: 90%;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .cservices-list {
+        grid-template-columns: 1fr;
+    }
+
+    .csearch-sort-container {
+        width: 100%;
+    }
+}

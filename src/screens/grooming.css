@@ -1,0 +1,242 @@
+/* Full width container */
+.grooming-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e3fdfd, #ffe6fa);
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Heading Style */
+.gheading {
+    font-size: 3rem;
+    color: #222;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Search and Sort container */
+.gsearch-sort-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    gap: 20px;
+}
+
+.gsearch-bar {
+    width: 50%;
+    padding: 14px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.gsearch-bar:focus {
+    border-color: #6a1b9a;
+    background: rgba(255, 255, 255, 1);
+}
+
+.gsort-select {
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    background: linear-gradient(to right, #ffffff, #f3e5f5);
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.gsort-select:hover {
+    border-color: #7b1fa2;
+    background: #ffffff;
+}
+
+/* Services list container */
+.gservices-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+/* Card container for each service */
+.gservice-card {
+    border: none;
+    padding: 30px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #ffffff, #fce4ec);
+    flex: 0 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.gservice-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.05), transparent);
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.gservice-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.gservice-card:hover::before {
+    transform: scale(1.5);
+    opacity: 0.2;
+}
+
+.gservice-card * {
+    position: relative;
+    z-index: 1;
+}
+
+/* Service Details */
+.gservice-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #7b1fa2;
+    margin-bottom: 15px;
+}
+
+.gservice-details {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.gprice {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d84315;
+    margin-top: 15px;
+}
+
+/* Pagination styles */
+.gpagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.gpage-button {
+    padding: 12px 16px;
+    margin: 0 8px;
+    border: none;
+    background: linear-gradient(to right, #f8f8f8, #fce4ec);
+    color: #6a1b9a;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gpage-button:hover {
+    background: #7b1fa2;
+    color: white;
+}
+
+.gpage-button.active {
+    background: #6a1b9a;
+    color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Booking Form */
+.gbooking-form-container {
+    margin-top: 40px;
+}
+
+.gbooking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    max-width: 450px;
+    margin: 30px auto;
+}
+
+.gbooking-form input {
+    padding: 14px;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.gbooking-form input:focus {
+    border-color: #7b1fa2;
+    background: #ffffff;
+}
+
+.gbooking-form button {
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(to right, #6a1b9a, #ab47bc);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.gbooking-form button:hover {
+    background: #7b1fa2;
+}
+
+.gmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.gmodal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.gclose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}

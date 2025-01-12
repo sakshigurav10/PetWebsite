@@ -1,0 +1,202 @@
+/* Global Styles */
+.AnimalWelfare {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f4f4f4, #e8f6f9);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-x: hidden; /* Prevent horizontal scrolling on scaling elements */
+}
+
+/* Header Styles */
+.AnimalWelfare header {
+  background: linear-gradient(90deg, #2c3e50, #34495e);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.AnimalWelfare header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.AnimalWelfare header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.AnimalWelfare header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+}
+
+.AnimalWelfare header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, background-color 0.3s, transform 0.3s;
+}
+
+.AnimalWelfare header nav ul li a:hover {
+  color: #f39c12;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.AnimalWelfare header nav ul li a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #f39c12;
+  transition: width 0.3s ease-in-out;
+  margin: auto;
+}
+
+.AnimalWelfare header nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* Section Styles */
+.AnimalWelfare section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.AnimalWelfare section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+}
+
+.AnimalWelfare section h2, section h3 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.AnimalWelfare section p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Guidelines Cards */
+.AnimalWelfare .guidelines {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.AnimalWelfare .guidelines div {
+  background: linear-gradient(135deg, #ffffff, #f2f9fc);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.AnimalWelfare .guidelines div:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.AnimalWelfare .guidelines h4 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.AnimalWelfare .guidelines div:hover h4 {
+  color: #3498db;
+}
+
+.AnimalWelfare .guidelines p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Buttons */
+.AnimalWelfare button {
+  padding: 14px 24px;
+  background: linear-gradient(90deg, #3498db, #2980b9);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+}
+
+.AnimalWelfare button:hover {
+  background: linear-gradient(90deg, #2980b9, #1c658c);
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* Donation Form */
+.AnimalWelfare .donation-form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, #e9f4f9);
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.AnimalWelfare .donation-form:hover {
+  transform: scale(1.03);
+}
+
+/* Input Focus Effects */
+.AnimalWelfare .donation-form .form-group input:focus,
+.AnimalWelfare .donation-form .form-group select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.4);
+}
+
+/* Success Message */
+.AnimalWelfare .success-message {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.1rem;
+}

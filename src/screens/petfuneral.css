@@ -1,0 +1,379 @@
+/* General Styles */
+.pet-funeral-container {
+    font-family: "Poppins", sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    background: linear-gradient(to bottom, #faf8ff, #e8e3f7);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* Header Section */
+  .funeral-header {
+    text-align: center;
+    padding: 30px;
+    margin-bottom: 40px;
+    background: linear-gradient(135deg, #6a45a9, #4a3277);
+    border-radius: 12px;
+    color: white;
+  }
+  
+  .funeral-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .funeral-header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+  }
+  
+  /* Funeral Services Section */
+  .funeral-services h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5a3d99;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .services-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33% - 20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem;
+    color: #5a3d99;
+    margin-bottom: 10px;
+  }
+  
+  .service-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .service-card button {
+    background: linear-gradient(135deg, #6a45a9, #4c3081);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .service-card button:hover {
+    background: linear-gradient(135deg, #5a3d99, #3a2060);
+  }
+  
+  /* Share Memories Section */
+  .share-memories h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5a3d99;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .share-memories textarea {
+    width: 100%;
+    height: 120px;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 10px;
+    resize: none;
+  }
+  
+  .share-memories .memory-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .share-memories .memory-controls span {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .share-memories button {
+    background: linear-gradient(135deg, #6a45a9, #4c3081);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .share-memories button:hover {
+    background: linear-gradient(135deg, #5a3d99, #3a2060);
+  }
+  
+  .memories-list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .memories-list li {
+    background: #f7f4ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .memories-list li small {
+    display: block;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  /* Support Resources Section */
+  .support-resources h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5a3d99;
+  }
+  
+  .support-resources ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .support-resources li {
+    margin-bottom: 15px;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .support-resources li:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+  
+  .resource-title {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #5a3d99;
+  }
+  
+  .resource-details {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Modal */
+  .funmodal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .funmodal {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .funmodal h3 {
+    font-size: 1.8rem;
+    color: #5a3d99;
+    margin-bottom: 15px;
+  }
+  
+  .funmodal form input,
+  .funmodal form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+  }
+  
+  .funmodal form button {
+    background: linear-gradient(135deg, #6a45a9, #4c3081);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .funmodal form button:hover {
+    background: linear-gradient(135deg, #5a3d99, #3a2060);
+  }
+  
+  .funclose-modal {
+    background: none;
+    border: none;
+    color: #6a45a9;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+
+  /* Book Now Form - Container */
+.book-now-container {
+    background: linear-gradient(135deg, #faf8ff, #e8e3f7);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form Header */
+  .book-now-container h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #5a3d99;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Form Fields */
+  .book-now-container form input,
+  .book-now-container form textarea,
+  .book-now-container form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .book-now-container form input:focus,
+  .book-now-container form textarea:focus,
+  .book-now-container form select:focus {
+    border: 2px solid #6a45a9;
+    box-shadow: 0 4px 10px rgba(106, 69, 169, 0.2);
+    outline: none;
+  }
+  
+  /* Placeholder Animation */
+  .book-now-container form input::placeholder,
+  .book-now-container form textarea::placeholder {
+    color: #bbb;
+    transition: color 0.3s ease;
+  }
+  
+  .book-now-container form input:focus::placeholder,
+  .book-now-container form textarea:focus::placeholder {
+    color: transparent;
+  }
+  
+  /* Submit Button */
+  .book-now-container form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #6a45a9, #4c3081);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-now-container form button:hover {
+    background: linear-gradient(135deg, #5a3d99, #3a2060);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Additional Features: Tooltips for Guidance */
+  .book-now-container form .form-field {
+    position: relative;
+  }
+  
+  .book-now-container form .tooltip {
+    position: absolute;
+    top: -30px;
+    left: 10px;
+    background: #5a3d99;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 10;
+  }
+  
+  .book-now-container form input:focus ~ .tooltip,
+  .book-now-container form textarea:focus ~ .tooltip {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Success Message */
+  .success-message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4edda;
+    color: #155724;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #c3e6cb;
+  }
+  
+  

@@ -1,0 +1,271 @@
+/* General Styles */
+.Events {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.Events a {
+    text-decoration: none;
+}
+
+.Events .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+/* Banner Styling */
+.Events .banner {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #e9f5e9;
+    color: #010601;
+    border-radius: 15px;
+    margin: 20px auto;
+    background-image: url('../images/eve.avif'); 
+    /* background-size: cover; */
+    /* background-position: center; */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.Events .banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.Events .banner p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Events Section */
+.Events .events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 60px 20px;
+}
+
+.Events .event-card {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 40px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.Events .event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Events .event-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.Events .event-card h2 {
+    font-size: 1.8rem;
+    color: #2f4f2f;
+    margin-bottom: 10px;
+}
+
+.Events .event-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.Events .event-card button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.Events.event-card button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design for Events */
+@media (max-width: 1024px) {
+    .event-card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .event-card {
+        width: 100%;
+    }
+}
+/* Filter and Sort Section */
+.filter-sort {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to right, #e0f7e9, #c4e5c4);
+    border-radius: 15px;
+    margin-left: 350px ; 
+    margin-right: 40px;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* .filter-sort:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+} */
+
+.filter-sort label {
+    font-weight: 700;
+    color: #2f4f2f;
+    margin-right: 15px;
+    font-size: 1.1rem;
+}
+
+.filter-sort input,
+.filter-sort select {
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    margin-right: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    color: #2f4f2f;
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.filter-sort input::placeholder {
+    color: #9e9e9e;
+}
+
+.filter-sort input:focus,
+.filter-sort select:focus {
+    border-color: #4caf50;
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.2);
+}
+
+.filter-sort select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%234CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 16px;
+}
+
+/* .filter-sort input:hover,
+.filter-sort select:hover {
+    border-color: #66bb6a;
+} */
+
+.filter-sort input:focus::placeholder,
+.filter-sort select:focus {
+    color: #4caf50;
+}
+
+/* Responsive Design for Filter and Sort */
+@media (max-width: 768px) {
+    .filter-sort {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .filter-sort input,
+    .filter-sort select {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+
+/* Modal Styling */
+/* Modal Styling */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+
+.modal-content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.modal-content input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.modal-content input:focus {
+    border-color: #4caf50;
+}
+
+.modal-content button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.modal-content button:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Modal */
+@media (max-width: 600px) {
+    .modal-content {
+        padding: 20px;
+        width: 90%;
+    }
+}

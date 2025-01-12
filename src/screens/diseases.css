@@ -1,0 +1,140 @@
+.Disease {
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+  padding: 30px;
+  background: linear-gradient(to bottom, #f4f4f9, #e8f5e9);
+  color: #333;
+}
+
+.Disease h1 {
+  color: #4CAF50;
+  margin-bottom: 25px;
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.Disease h2 {
+  margin-top: 35px;
+  color: #555;
+  font-size: 2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.Disease textarea {
+  width: 90%;
+  max-width: 600px;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.Disease textarea:focus {
+  border-color: #4CAF50;
+  box-shadow: 0 6px 12px rgba(0, 128, 0, 0.3);
+  outline: none;
+}
+
+.Disease .button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.Disease button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Disease button:hover {
+  background-color: #45a049;
+  transform: translateY(-3px);
+}
+
+.Disease button:active {
+  transform: translateY(2px);
+}
+
+.Disease .disease-suggestion {
+  margin-top: 35px;
+  text-align: left;
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #ffffff, #f9f9f9);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.Disease .disease-suggestion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.Disease .disease-suggestion h3 {
+  color: #333;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.Disease .vet-tip {
+  margin-top: 35px;
+  background: #fffbea;
+  padding: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: 1px solid #ffecb5;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Disease select {
+  padding: 15px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 25px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Disease .pet-type-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 35px 0;
+}
+
+.Disease .pet-type-buttons button {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background: linear-gradient(to bottom, #007BFF, #0056b3);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Disease .pet-type-buttons button:hover {
+  background: linear-gradient(to bottom, #0056b3, #003f88);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.Disease .pet-type-buttons button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  box-shadow: none;
+  opacity: 0.7;
+}

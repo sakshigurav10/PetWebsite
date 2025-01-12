@@ -1,0 +1,303 @@
+.link-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f2f7fa;
+}
+
+.link-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-top: 3rem;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.link-card-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.link-card-info {
+    margin-top: 10px;
+}
+
+.link-card-info h3 {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #4a90e2;
+}
+
+.link-card-info p {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+.lost-found-section {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+    border-radius: 10px;
+}
+
+.lost-found-section h2 {
+    color: #333;
+    font-size: 2rem;
+}
+
+.lost-found-section p {
+    color: #666;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.lost-found-link {
+    color: #f37329;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #f37329;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    transition: all 0.3s ease;
+}
+
+.lost-found-link:hover {
+    background-color: #f37329;
+    color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Reviews Section Styling */
+.review_sec {
+    background-color: #f5f8fa; /* Soft, neutral background */
+    padding: 2.5rem 1rem;
+    margin: 1.5rem auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    max-width: 1200px; /* Adjusted for better focus */
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 2.4rem;
+    color: #2c3e50; /* Darker shade for readability */
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.prev, .next {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #5da9e9; /* Soft blue for arrow buttons */
+    transition: color 0.3s ease;
+    padding: 0 65px; /* Reduced padding */
+}
+
+.prev:hover, .next:hover {
+    color: #fa7268; /* Bright coral hover color */
+}
+
+/* Review Container */
+.review-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 1rem 0;
+    margin: 0 auto;
+}
+
+.item {
+    flex: 0 0 280px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    margin: 0 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.item img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 3px solid #e2e8f0; /* Subtle border for images */
+}
+
+.item .textbox {
+    margin-top: 8px;
+}
+
+.item .textbox h3 {
+    font-size: 1.3rem;
+    color: #4a90e2; /* Blue for names */
+    margin-bottom: 6px;
+    font-weight: 600;
+}
+
+.item .textbox .job {
+    font-size: 0.9rem;
+    color: #6c7a89;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 0.95rem;
+    color: #495867;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.rating {
+    margin-top: 8px;
+}
+
+.rating i {
+    color: #ffb400; /* Golden yellow for stars */
+    margin-right: 3px;
+    font-size: 1.2rem;
+}
+
+
+
+
+.add-review-section {
+    background-color: #e0f2f9;
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.add-review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.add-review-form input,
+.add-review-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.add-review-form button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-review-form button:hover {
+    background-color: #f37329;
+}
+
+
+/* Pet Recommendation Section */
+.pet-recommendation-section {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0); /* Gradient Background */
+    padding: 60px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center;
+    margin: 40px 0;
+    color: #fff; /* Text color */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.pet-recommendation-section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0px 18px 30px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+.pet-recommendation-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow for depth */
+}
+
+.pet-recommendation-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.pet-recommendation-section .btn-primary {
+    background-color: #ff6f61; /* Soft Coral for the button */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 30px; /* Rounded corners for button */
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.pet-recommendation-section .btn-primary:hover {
+    background-color: #ff5a4e; /* Darken button on hover */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+.pet-recommendation-section .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+

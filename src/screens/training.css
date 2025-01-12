@@ -1,0 +1,204 @@
+/* General container for the training page */
+.training-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background: linear-gradient(to bottom, #e975b3, #dcb7d7); /* Light to darker gray gradient */
+}
+
+/* Heading for training services */
+.training-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for search and sort options */
+.tsearch-sort-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Search bar styling */
+.tsearch-bar {
+    width: 48%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-color: #fff;
+}
+
+.tsearch-bar:focus {
+    border-color: #3498db;
+}
+
+/* Sort dropdown styling */
+.tsort-select {
+    width: 48%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    background-color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.tsort-select:focus {
+    border-color: #3498db;
+}
+
+/* Container for training services cards */
+.tservices-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Individual service card styling */
+.tservice-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.tservice-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.tservice-card h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #840773;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.tservice-card p {
+    font-size: 1.1rem;
+    color: #313738;
+    margin: 8px 0;
+}
+
+/* Pagination button styles */
+.tpagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.tpage-button {
+    padding: 12px 20px;
+    margin: 0 8px;
+    border: 1px solid #3498db;
+    background-color: #fff;
+    color: #3498db;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tpage-button:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.tpage-button.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Modal styles */
+.tmodal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.tmodal-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 420px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tclose {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.tclose:hover {
+    color: #c0392b;
+}
+
+.tbooking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.tbooking-form input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #bdc3c7;
+    font-size: 1rem;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.tbooking-form input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.tbooking-form button {
+    padding: 14px;
+    background-color: #e46cac;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.tbooking-form button:hover {
+    background-color: #2980b9;
+}
+
+.tmessage {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 20px;
+}

@@ -1,0 +1,73 @@
+.payment-container {
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.payment-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.payment-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.payment-options {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.payment-options label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px; /* Adds space between the radio button, icon, and text */
+  margin-bottom: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.payment-options input[type="radio"] {
+  margin-right: 8px; /* Space between the radio button and the icon */
+  accent-color: #007bff; /* Customize radio button color */
+}
+
+.payment-options .icon {
+  font-size: 1.5rem; /* Adjust icon size if needed */
+  margin-right: 5px; /* Space between the icon and label */
+}
+
+
+.payment-details {
+  margin-bottom: 20px;
+}
+
+.payment-details input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.pay-button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+  background-color: #0056b3;
+}

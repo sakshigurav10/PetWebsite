@@ -1,0 +1,183 @@
+
+[
+    {
+      "petType": "dog",
+      "disease": "Canine Parvovirus",
+      "symptoms": ["vomiting", "diarrhea", "lethargy", "fever"],
+      "description": "Canine parvovirus is a highly contagious viral infection that affects dogs, particularly puppies.",
+      "cause": "Caused by the canine parvovirus, spread through contact with infected feces.",
+      "treatment": "Treatment typically involves supportive care, such as fluid therapy and medications to control symptoms.",
+      "care": "Keep your dog hydrated and provide a quiet, stress-free environment. Consult a vet immediately."
+    },
+    {
+      "petType": "cat",
+      "disease": "Feline Leukemia",
+      "symptoms": ["weight loss", "lethargy", "fever","poor coat condition"],
+      "description": "Feline leukemia is a viral infection that weakens the immune system of cats.",
+      "cause": "Caused by the feline leukemia virus (FeLV), typically spread through close contact with infected cats.",
+      "treatment": "There is no cure for FeLV, but supportive treatments can help manage symptoms.",
+      "care": "Keep your cat indoors and provide regular veterinary check-ups."
+    },
+    {
+        "disease": "Feline Upper Respiratory Infection",
+        "petType": "cat",
+        "description": "A common condition in cats that affects the upper respiratory tract, causing sneezing, coughing, and nasal discharge.",
+        "cause": "Caused by various viruses and bacteria, often including feline herpesvirus and calicivirus.",
+        "symptoms": ["sneezing", "coughing", "nasal discharge", "fever"],
+        "treatment": "Treatment may include antibiotics, antiviral medications, and supportive care for hydration.",
+        "care": "Ensure your cat is kept warm and hydrated. Consult your vet for the best course of action."
+      },
+      {
+        "disease": "Canine Distemper",
+        "petType": "dog",
+        "description": "A contagious viral disease that affects a dog's respiratory, gastrointestinal, and nervous systems.",
+        "cause": "Caused by the distemper virus.",
+        "symptoms": ["fever", "coughing", "nasal discharge", "vomiting", "seizures", "muscle twitching"],
+        "treatment": "No specific cure; supportive care such as fluids, anti-seizure medications, and antibiotics for secondary infections may be used.",
+        "care": "Early vaccination can help prevent distemper. Consult your vet for treatment options."
+      },
+      {
+        "disease": "Kennel Cough",
+        "petType": "dog",
+        "description": "A contagious respiratory disease that causes coughing and other upper respiratory symptoms.",
+        "cause": "Caused by a combination of viruses (like canine parainfluenza) and bacteria (like Bordetella bronchiseptica).",
+        "symptoms": ["dry cough", "nasal discharge", "sneezing", "fever", "loss of appetite"],
+        "treatment": "Cough suppressants, antibiotics, and sometimes antivirals; supportive care.",
+        "care": "Keep your dog away from infected dogs and ensure they rest and stay hydrated."
+      },
+      {
+        "disease": "Lyme Disease",
+        "petType": "dog",
+        "description": "A bacterial infection transmitted by ticks, affecting dogs' joints and organs.",
+        "cause": "Caused by Borrelia burgdorferi, spread by the bite of infected ticks.",
+        "symptoms": ["fever", "loss of appetite", "limping", "swollen joints", "lethargy"],
+        "treatment": "Antibiotics (usually doxycycline) and pain relief for joint inflammation.",
+        "care": "Use tick prevention methods and consult your vet for diagnosis and treatment."
+      },
+      {
+        "disease": "Heartworm Disease",
+        "petType": "dog",
+        "description": "A parasitic infection where heartworms live in the heart and lungs, causing damage to these organs.",
+        "cause": "Caused by Dirofilaria immitis, transmitted by mosquitoes.",
+        "symptoms": ["coughing", "fatigue", "difficulty breathing", "weight loss", "swollen abdomen"],
+        "treatment": "Medications to kill the adult worms, often involving a series of injections.",
+        "care": "Preventive medication (monthly heartworm preventatives) is essential to protect your dog."
+      },
+      {
+        "disease": "Canine Hip Dysplasia",
+        "petType": "dog",
+        "description": "A genetic condition where the hip joint is malformed, leading to arthritis and pain.",
+        "cause": "Genetic predisposition, obesity, and rapid growth.",
+        "symptoms": ["limping", "difficulty standing up", "stiffness", "pain when moving"],
+        "treatment": "Weight management, physical therapy, pain management, and in severe cases, surgery.",
+        "care": "Ensure your dog maintains a healthy weight, and consult your vet for an appropriate exercise routine."
+      },
+      {
+        "disease": "Canine Diabetes",
+        "petType": "dog",
+        "description": "A condition where the dog’s body cannot properly produce or use insulin, leading to high blood sugar.",
+        "cause": "Often caused by genetics, obesity, or an autoimmune response.",
+        "symptoms": ["increased thirst", "frequent urination", "weight loss", "increased hunger", "lethargy"],
+        "treatment": "Insulin injections, dietary changes, and regular blood glucose monitoring.",
+        "care": "Ensure regular checkups and follow the vet’s guidelines on insulin management and diet."
+      },
+      {
+        "disease": "Canine Allergies",
+        "petType": "dog",
+        "description": "Allergies in dogs can cause skin issues, itching, ear infections, and digestive problems.",
+        "cause": "Caused by environmental allergens, food, or flea bites.",
+        "symptoms": ["itching", "red or inflamed skin", "ear infections", "vomiting", "diarrhea"],
+        "treatment": "Antihistamines, steroids, flea control, and a hypoallergenic diet.",
+        "care": "Keep your dog away from known allergens, and consult your vet for appropriate allergy treatment."
+      },
+      {
+        "disease": "Cushing's Disease",
+        "petType": "dog",
+        "description": "A disorder where the adrenal glands produce too much cortisol, leading to various symptoms.",
+        "cause": "Caused by a tumor in the pituitary or adrenal glands.",
+        "symptoms": ["increased thirst", "increased urination", "weight gain", "hair loss", "muscle weakness"],
+        "treatment": "Medication to control cortisol levels or surgery to remove tumors.",
+        "care": "Regular veterinary monitoring and medication as prescribed are important."
+      },
+      {
+        "disease": "Canine Cognitive Dysfunction Syndrome",
+        "petType": "dog",
+        "description": "Age-related decline in cognitive function that affects a dog's memory, awareness, and behavior.",
+        "cause": "Likely a result of aging and changes in brain structure.",
+        "symptoms": ["disorientation", "restlessness", "sleep disturbances", "decreased interaction", "house soiling"],
+        "treatment": "Medications and dietary supplements to support brain health, along with environmental enrichment.",
+        "care": "Provide mental stimulation and a consistent daily routine to help manage symptoms."
+      },
+      {
+        "disease": "Feline Lower Urinary Tract Disease (FLUTD)",
+        "petType": "cat",
+        "description": "A group of conditions that affect a cat’s bladder and urethra, leading to urinary discomfort and potential blockages.",
+        "cause": "Caused by bladder infections, urinary stones, stress, or obesity.",
+        "symptoms": ["frequent urination", "straining to urinate", "blood in urine", "crying during urination", "lethargy"],
+        "treatment": "Treatment may include antibiotics, a special diet, and sometimes surgery for urinary blockages.",
+        "care": "Ensure your cat has access to fresh water, a healthy diet, and a stress-free environment."
+      },
+      {
+        "disease": "Feline Hyperthyroidism",
+        "petType": "cat",
+        "description": "A condition where the thyroid gland overproduces hormones, leading to a variety of symptoms.",
+        "cause": "Often caused by a benign tumor on the thyroid gland.",
+        "symptoms": ["weight loss", "increased appetite", "hyperactivity", "vomiting", "increased thirst"],
+        "treatment": "Medication to manage thyroid hormone levels, radioactive iodine treatment, or surgery.",
+        "care": "Regular vet checkups and monitoring thyroid hormone levels are essential for managing the condition."
+      },
+      {
+        "disease": "Feline Diabetes",
+        "petType": "cat",
+        "description": "A condition where the body cannot properly regulate blood sugar levels, leading to high blood sugar.",
+        "cause": "Typically caused by obesity, genetics, or an imbalance in insulin production.",
+        "symptoms": ["increased thirst", "frequent urination", "weight loss", "decreased appetite", "lethargy"],
+        "treatment": "Insulin injections, dietary changes, and regular blood glucose monitoring.",
+        "care": "Ensure your cat is on a consistent feeding schedule and maintain a healthy weight."
+      },
+      {
+        "disease": "Feline Immunodeficiency Virus (FIV)",
+        "petType": "cat",
+        "description": "A viral disease that attacks the immune system, leaving the cat susceptible to secondary infections.",
+        "cause": "Caused by the feline immunodeficiency virus, spread through bites or saliva.",
+        "symptoms": ["weight loss", "fever", "poor coat condition", "diarrhea", "frequent infections"],
+        "treatment": "No cure, but supportive care, regular vet visits, and a healthy diet can help manage the symptoms.",
+        "care": "Keep your cat indoors to prevent the spread to other cats and reduce exposure to infections."
+        },
+        {
+          "disease": "Feline Heartworm Disease",
+          "petType": "cat",
+          "description": "A parasitic disease where heartworms infect the heart and lungs, causing severe respiratory symptoms.",
+          "cause": "Caused by Dirofilaria immitis, transmitted by mosquito bites.",
+          "symptoms": ["coughing", "vomiting", "difficulty breathing", "weight loss", "lethargy"],
+          "treatment": "Treatment may involve medications to manage the infection and supportive care for lung function.",
+          "care": "Preventive medications, such as monthly heartworm preventatives, are crucial for prevention."
+        },
+        {
+          "disease": "Feline Infectious Peritonitis (FIP)",
+          "petType": "cat",
+          "description": "A viral disease caused by the feline coronavirus that leads to severe inflammation and organ failure.",
+          "cause": "Caused by the feline coronavirus, which can mutate into a form that causes FIP.",
+          "symptoms": ["fever", "weight loss", "yellowing of the eyes and skin", "difficulty breathing", "swollen abdomen"],
+          "treatment": "No cure, but antiviral medications like GS-441524 have shown promise in treating FIP.",
+          "care": "Early diagnosis and antiviral treatment can help manage the disease and improve the quality of life."
+        },
+        {
+          "disease": "Feline Asthma",
+          "petType": "cat",
+          "description": "A respiratory condition that causes inflammation and narrowing of the airways, making it difficult for the cat to breathe.",
+          "cause": "Often triggered by allergens, such as dust, smoke, or pollen.",
+          "symptoms": ["coughing", "wheezing", "labored breathing", "panting", "fatigue"],
+          "treatment": "Inhaled corticosteroids, bronchodilators, and management of environmental triggers.",
+          "care": "Keep your cat’s environment smoke-free, dust-free, and low in allergens."
+        },
+        {
+          "disease": "Feline Dental Disease",
+          "petType": "cat",
+          "description": "A condition where tartar buildup leads to gingivitis and periodontal disease, causing pain and infection.",
+          "cause": "Poor oral hygiene, leading to plaque and tartar buildup.",
+          "symptoms": ["bad breath", "drooling", "difficulty eating", "pawing at mouth", "red or swollen gums"],
+          "treatment": "Professional dental cleaning by a vet, and in severe cases, tooth extractions may be necessary.",
+          "care": "Regular brushing of your cat's teeth and providing dental chews can help prevent dental issues."
+        }
+  ]

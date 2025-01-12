@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Soft blue background for a calm effect */
+    color: #333;
+  }
+  
+  .services-container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  /* Header Section */
+  .services-header {
+    background-color: #ff6f61; /* Vibrant coral for an eye-catching header */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 5px solid #ff4b3e; /* Subtle contrast border */
+  }
+  
+  .services-header h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .services-header p {
+    font-size: 20px;
+    margin: 0;
+    font-style: italic;
+  }
+  
+  /* Service Sections */
+  .service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 30px;
+    gap: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-section:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-light {
+    background-color: #fff4e6; /* Soft peach for warmth */
+  }
+  
+  .section-dark {
+    background-color: #dff5f2; /* Gentle mint green for freshness */
+  }
+  
+  /* Content Styling */
+  .service-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center; /* Center-align content for better balance */
+  }
+  
+  .service-content h2 {
+    font-size: 30px;
+    color: #ff6f61; /* Matches header for consistency */
+    margin-bottom: 15px;
+  }
+  
+  .service-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .service-button {
+    padding: 12px 24px;
+    background-color: #007bff; /* Vibrant blue for buttons */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded buttons for modern look */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: inline-block; /* Ensures button is properly centered */
+  }
+  
+  .service-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  /* Image Styling */
+  .service-image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .service-image {
+    width: 90%;
+    height: auto;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .service-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-content {
+      padding: 20px 0;
+    }
+  
+    .service-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+  

@@ -1,0 +1,188 @@
+/* Banner Section */
+.lost-found-banner {
+    text-align: center;
+    background: linear-gradient(135deg, #f5a623, #f37329);
+    color: white;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.lost-found-banner h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.lost-found-banner p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Search and Sort Container */
+.search-sort-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 2rem;
+    gap: 15px;
+}
+
+.search-bar {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: #f37329;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sort-dropdown {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.sort-dropdown:hover {
+    border-color: #f37329;
+}
+
+/* Container for Pet Cards */
+.lost-found-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 2rem;
+}
+
+/* Individual Pet Card */
+.pet-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    padding: 20px;
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Title inside pet card */
+.pet-card h2 {
+    color: #f37329;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Details inside pet card */
+.pet-card p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Buttons inside pet card */
+.pet-card button {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.pet-card button:hover {
+    background-color: #45a049;
+}
+
+/* Pagination */
+.lostpagination {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.lostpagination button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f37329;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.lostpagination button.active {  
+    background-color: #f5a623;
+}
+
+.lostpagination button:hover {
+    background-color: #e85b22;
+}
+
+/* Make page responsive */
+@media (max-width: 1024px) {
+    .lost-found-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pet-card {
+        width: 260px;
+    }
+    .search-bar {
+        width: 240px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pet-card {
+        width: 100%;
+    }
+
+    .lost-found-banner h1 {
+        font-size: 2.2rem;
+    }
+
+    .lost-found-banner p {
+        font-size: 1rem;
+    }
+
+    .search-sort-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .lostpagination button {
+        padding: 8px 12px;
+    }
+}
+
