@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/PetWebsite/static/css/main.88e80f89.css",
+    "main.js": "/PetWebsite/static/js/main.5cfb61c9.js",
+    "static/js/453.8d3f16f7.chunk.js": "/PetWebsite/static/js/453.8d3f16f7.chunk.js",
+    "static/media/pet.jpg": "/PetWebsite/static/media/pet.29233e8f284646e3df71.jpg",
+    "static/media/pet3.png": "/PetWebsite/static/media/pet3.3b852ac606ae4b135226.png",
+    "static/media/compete.jpg": "/PetWebsite/static/media/compete.8d20aa492d1a9e55c16d.jpg",
+    "static/media/pet2.jpg": "/PetWebsite/static/media/pet2.7d288b71d3875c6bd37b.jpg",
+    "static/media/supply.avif": "/PetWebsite/static/media/supply.0ff8d92e8aa25767713f.avif",
+    "static/media/pet5.jpg": "/PetWebsite/static/media/pet5.0f5b4f953eeb04658010.jpg",
+    "static/media/pet4.jpg": "/PetWebsite/static/media/pet4.3faf52b2052ae3d07c61.jpg",
+    "static/media/pet1.jpg": "/PetWebsite/static/media/pet1.7beaea5fd721d629afa3.jpg",
+    "static/media/gplaybadge1.png": "/PetWebsite/static/media/gplaybadge1.be711b900b8149d6ef35.png",
+    "static/media/serv.jpg": "/PetWebsite/static/media/serv.e59a2339e62b46c7c432.jpg",
+    "static/media/appstorebadge1.png": "/PetWebsite/static/media/appstorebadge1.894a54ea6598438adb60.png",
+    "static/media/eve.avif": "/PetWebsite/static/media/eve.c3118e46dd60aea345ae.avif",
+    "index.html": "/PetWebsite/index.html",
+    "main.88e80f89.css.map": "/PetWebsite/static/css/main.88e80f89.css.map",
+    "main.5cfb61c9.js.map": "/PetWebsite/static/js/main.5cfb61c9.js.map",
+    "453.8d3f16f7.chunk.js.map": "/PetWebsite/static/js/453.8d3f16f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.88e80f89.css",
+    "static/js/main.5cfb61c9.js"
+  ]
+}
